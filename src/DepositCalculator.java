@@ -2,9 +2,9 @@ import java.util.Scanner;
 
 public class DepositCalculator {
     Scanner scanner = new Scanner(System.in);
-    int period;
-    int action;
-    double sum = 0;
+    public int period;
+    public int action;
+    public double sum = 0;
 
     double calculateComplexPercent(double amount, double yearRate, int depositPeriod) {
         double pay = amount * Math.pow((1 + yearRate / 12), 12 * depositPeriod);
